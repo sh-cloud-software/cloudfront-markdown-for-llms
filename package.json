@@ -1,6 +1,21 @@
 {
   "name": "cloudfront-markdown-for-llms",
   "version": "0.1.0",
+  "description": "CDK project that configures CloudFront to serve Markdown content to LLMs based on the Accept header",
+  "author": "sh cloud software (https://www.sh-cloud.software)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sh-cloud-software/cloudfront-markdown-for-llms"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "cloudfront",
+    "markdown",
+    "llm"
+  ],
+  "private": true,
   "bin": {
     "cloudfront-markdown-for-llms": "bin/cloudfront-markdown-for-llms.js"
   },
