@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - CloudFront Markdown for LLMs</title>
+</head>
+<body>
+    <h1>Welcome to CloudFront Markdown for LLMs</h1>
+    <p>This project demonstrates serving <strong>Markdown content</strong> to LLMs
+    while maintaining <em>HTML pages</em> for human visitors.</p>
+
+    <h2>How It Works</h2>
+    <ol>
+        <li>HTML files are uploaded to an S3 bucket.</li>
+        <li>A Lambda function automatically converts them to Markdown.</li>
+        <li>CloudFront checks the <code>Accept</code> header on each request.</li>
+        <li>If <code>Accept: text/markdown</code> is present, it serves the <code>.md</code> version.</li>
+    </ol>
+
+    <h2>Links</h2>
+    <ul>
+        <li><a href="/about.html">About this project</a></li>
+    </ul>
+
+    <h2>Code Example</h2>
+    <pre><code>curl -H "Accept: text/markdown" https://your-distribution.cloudfront.net/index.html</code></pre>
+</body>
+</html>

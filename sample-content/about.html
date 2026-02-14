@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CloudFront Markdown for LLMs</title>
+</head>
+<body>
+    <h1>About This Project</h1>
+    <p>This is a demonstration of content negotiation using CloudFront Functions.</p>
+
+    <h2>Architecture</h2>
+    <p>The solution uses the following AWS services:</p>
+    <ul>
+        <li><strong>Amazon S3</strong> - stores both HTML and generated Markdown files</li>
+        <li><strong>AWS Lambda</strong> - converts HTML to Markdown using the turndown library</li>
+        <li><strong>Amazon CloudFront</strong> - serves content with header-based routing</li>
+        <li><strong>CloudFront Functions</strong> - performs URL rewriting at the edge</li>
+    </ul>
+
+    <h2>Benefits for LLMs</h2>
+    <p>Large Language Models process Markdown more efficiently than HTML because:</p>
+    <ol>
+        <li>Markdown has less syntactic overhead.</li>
+        <li>The content-to-markup ratio is higher.</li>
+        <li>Token usage is reduced significantly.</li>
+    </ol>
+
+    <p><a href="/index.html">Back to home</a></p>
+</body>
+</html>
